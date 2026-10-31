@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f2">
+  <meta name="description" content="A chemistry-powered guide to sorting everyday waste safely and thoughtfully.">
+  <meta property="og:title" content="EcoChem — Give waste a better next chapter">
+  <meta property="og:description" content="Understand the chemistry. Choose the right stream. Make a lighter footprint.">
+  <meta property="og:type" content="website">
+  <title>EcoChem — Give waste a better next chapter</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4.5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M19.5 4.8c-7.2-.6-12.6 2-13.4 7.3-.5 3.2 1.4 5.4 4.1 5.3 5.8-.2 8.9-6.5 9.3-12.6ZM5 20c2.1-4.1 5.3-7.1 9.2-9.1" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-recycle" viewBox="0 0 24 24"><path d="m9.2 5.1 1.6-2.2a1.6 1.6 0 0 1 2.7.1l1.3 2.3m-5.6-.2 2.4 3.6 3.3-2.2M18.6 9l2.1 3.6a1.7 1.7 0 0 1-1.5 2.5h-2.6m2-6.1-4.2 1.1.9 3.8M8 18.9H5.4a1.7 1.7 0 0 1-1.5-2.5l1.4-2.3m2.7 4.8 1.8-4-3.7-1.3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 19 6v5.3c0 4.5-3 7.8-7 9.7-4-1.9-7-5.2-7-9.7V6l7-3Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9 9h6v6H9zM9 2v4m6-4v4M9 18v4m6-4v4M2 9h4m-4 6h4m12-6h4m-4 6h4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-warning" viewBox="0 0 24 24"><path d="m10.3 4.2-7 12.1A1.8 1.8 0 0 0 4.9 19h14.2a1.8 1.8 0 0 0 1.6-2.7l-7-12.1a1.9 1.9 0 0 0-3.4 0Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 9v4m0 3h.01" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 15V4m-4 4 4-4 4 4M5 14v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2Zm7 13 .9 3.1L23 19l-3.1.9L19 23l-.9-3.1L15 19l3.1-.9L19 15Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="header-inner page-wrap">
+      <a class="brand" href="#top" aria-label="EcoChem home">
+        <img src="./ecochem-logo.svg" width="42" height="42" alt="">
+        <span class="brand-word">Eco<span>Chem</span><small>SMART SORTING ASSISTANT</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span></button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+        <a href="#assistant">Assistant</a>
+        <a href="#scan">Scan object</a>
+        <a href="#project">Our project</a>
+        <a href="#guide">Sorting guide</a>
+      </nav>
+      <a class="header-cta" href="#assistant">Start sorting <svg class="icon"><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="header-note page-wrap"><span class="status-dot"></span> A PROTOTYPE FOR CLEANER COMMUNITIES <span class="header-note-line"></span><span class="header-note-extra">SMALL CHOICES, LIGHTER FOOTPRINTS</span></div>
+  </header>
+
+  <main id="top">
+    <section id="assistant" class="hero page-wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-mark"></span> A little science. A lot less guesswork.</p>
+        <h1>Give waste a<br><span>better next</span><br><em>chapter.</em></h1>
+        <p class="hero-description">A chemistry-powered guide to help you sort everyday items into the right stream — one small choice, a lighter footprint.</p>
+        <form id="sort-form" class="search-form" autocomplete="off">
+          <label class="sr-only" for="item-search">What are you throwing away?</label>
+          <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.6" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m16 16 4.2 4.2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <input id="item-search" name="item" type="search" placeholder="What are you throwing away?" aria-describedby="search-hint" aria-autocomplete="list" aria-expanded="false" aria-controls="typeahead-list" role="combobox" required>
+          <button class="sort-button" type="submit">Sort it <svg class="icon"><use href="#i-arrow"/></svg></button>
+          <div id="typeahead-list" class="typeahead-list" role="listbox" aria-label="Item suggestions" hidden></div>
+        </form>
+        <p id="search-hint" class="sr-only">Type an item name or choose a suggestion below.</p>
+        <div class="suggestions"><span class="suggestion-label">TRY:</span>
+          <button type="button" class="suggestion-chip" data-suggest="banana peel">banana peel</button>
+          <button type="button" class="suggestion-chip" data-suggest="plastic bottle">plastic bottle</button>
+          <button type="button" class="suggestion-chip" data-suggest="old battery">old battery</button>
+          <button type="button" class="suggestion-chip" data-suggest="smartphone">smartphone</button>
+          <button type="button" class="suggestion-chip" data-suggest="paper cup">paper cup</button>
+          <button type="button" class="suggestion-chip" data-suggest="paint can">paint can</button>
+        </div>
+        <div class="hero-trust"><span class="trust-icon"><svg class="icon"><use href="#i-shield"/></svg></span><span>Clear guidance, not guesswork.<br><small>When in doubt, keep it out of the bin.</small></span></div>
+      </div>
+
+      <div class="hero-art" aria-label="Illustration of the Earth and four waste streams">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="globe-shadow"></div>
+        <div class="globe">
+          <div class="globe-shine"></div><div class="land land-one"></div><div class="land land-two"></div><div class="land land-three"></div>
+          <span class="globe-speck speck-one"></span><span class="globe-speck speck-two"></span><span class="globe-speck speck-three"></span>
+        </div>
+        <div class="globe-dot dot-green"><svg class="icon"><use href="#i-leaf"/></svg></div>
+        <div class="globe-dot dot-blue"><svg class="icon"><use href="#i-recycle"/></svg></div>
+        <div class="globe-dot dot-orange"><svg class="icon"><use href="#i-shield"/></svg></div>
+        <div class="globe-dot dot-red"><svg class="icon"><use href="#i-cpu"/></svg></div>
+        <div class="globe-label"><span class="label-spark"><svg class="icon"><use href="#i-spark"/></svg></span><span><strong>Sort smarter</strong><small>Understand the chemistry <span>↗</span></small></span></div>
+        <div class="orbit-caption caption-top">ONE PLANET <i></i> FOUR STREAMS</div>
+        <div class="orbit-caption caption-bottom">EVERY OBJECT HAS A NEXT CHAPTER</div>
+      </div>
+    </section>
+
+    <section id="results" class="results-section page-wrap" aria-live="polite" hidden>
+      <div class="section-intro result-intro"><p class="eyebrow"><span class="eyebrow-mark"></span> THE SHORT ANSWER</p><h2>Your next step,<br><em>made clearer.</em></h2><p class="section-copy">A good sort starts with knowing what an item is made of.</p></div>
+      <div id="result-card" class="result-card"></div>
+    </section>
+
+    <section class="quote-band" aria-label="Quote by Wendell Berry">
+      <div class="quote-inner page-wrap"><span class="quote-mark">“</span><blockquote>The Earth is what we all have in common.</blockquote><span class="quote-author">WENDELL BERRY</span><span class="quote-leaf"><svg class="icon"><use href="#i-leaf"/></svg></span></div>
+    </section>
+
+    <section id="streams" class="streams-section page-wrap">
+      <div class="section-heading-row"><div class="section-intro"><p class="eyebrow"><span class="eyebrow-mark"></span> START WITH THE MATERIAL</p><h2>Four streams.<br><em>One healthier planet.</em></h2></div><p class="section-copy">Different materials need different next steps. Choose a stream to see a quick example.</p></div>
+      <div class="stream-grid">
+        <button class="stream-card stream-bio" type="button" data-item="banana peel"><span class="stream-number">01 / NATURE</span><span class="stream-icon"><svg class="icon"><use href="#i-leaf"/></svg></span><span class="stream-title">Biodegradable</span><span class="stream-tagline">Returns to nature.</span><span class="stream-card-bottom">Explore this stream <svg class="icon"><use href="#i-arrow"/></svg></span></button>
+        <button class="stream-card stream-recycle" type="button" data-item="plastic bottle"><span class="stream-number">02 / MATERIALS</span><span class="stream-icon"><svg class="icon"><use href="#i-recycle"/></svg></span><span class="stream-title">Recyclable</span><span class="stream-tagline">Gets a second life.</span><span class="stream-card-bottom">Explore this stream <svg class="icon"><use href="#i-arrow"/></svg></span></button>
+        <button class="stream-card stream-hazard" type="button" data-item="old battery"><span class="stream-number">03 / CAUTION</span><span class="stream-icon"><svg class="icon"><use href="#i-shield"/></svg></span><span class="stream-title">Hazardous</span><span class="stream-tagline">Handle with care.</span><span class="stream-card-bottom">Explore this stream <svg class="icon"><use href="#i-arrow"/></svg></span></button>
+        <button class="stream-card stream-electronic" type="button" data-item="smartphone"><span class="stream-number">04 / RECOVERY</span><span class="stream-icon"><svg class="icon"><use href="#i-cpu"/></svg></span><span class="stream-title">Electronic</span><span class="stream-tagline">Recover the tech.</span><span class="stream-card-bottom">Explore this stream <svg class="icon"><use href="#i-arrow"/></svg></span></button>
+      </div>
+      <div class="stream-note"><span class="note-star">✳</span><span>Local collection rules vary. Our guide is a starting point, not a substitute for your council's instructions.</span><a href="#guide">Read the quick guide <svg class="icon"><use href="#i-arrow"/></svg></a></div>
+    </section>
+
+    <section id="scan" class="scan-section">
+      <div class="scan-wrap page-wrap">
+        <div class="scan-copy"><p class="eyebrow eyebrow-light"><span class="eyebrow-mark"></span> WHEN WORDS AREN'T ENOUGH</p><h2>See it. Scan it.<br><em>Sort it safely.</em></h2><p class="scan-lead">Show us the object. We'll help you think through what it might be made of and where it belongs.</p>
+          <div class="camera-status"><span class="status-dot status-dot-light"></span><span><strong>Camera ready</strong><small>Your photo stays on this device.</small></span></div>
+          <div class="scan-footnote"><span class="scan-footnote-icon"><svg class="icon"><use href="#i-spark"/></svg></span><span><strong>A thoughtful first guess.</strong> This prototype uses the filename to offer a sample suggestion; it does not use AI vision.</span></div>
+        </div>
+        <div class="upload-panel">
+          <div class="upload-panel-top"><span class="panel-index">01</span><span>SHOW ME THE OBJECT</span><span class="upload-ready"><i></i> READY</span></div>
+          <div id="drop-zone" class="upload-zone">
+            <div id="image-placeholder" class="upload-placeholder"><span class="upload-icon"><svg class="icon"><use href="#i-upload"/></svg></span><strong>Drop a photo here</strong><span>or choose an image from your device</span></div>
+            <img id="image-preview" class="image-preview" alt="Preview of the selected object" hidden>
+            <input id="photo-input" type="file" accept="image/*" capture="environment" aria-label="Choose a photo of an object">
+          </div>
+          <div class="upload-actions"><span id="file-status" class="file-status">JPG, PNG or WEBP · up to 10 MB</span><button id="analyze-photo" class="upload-button" type="button" disabled>Upload a photo <svg class="icon"><use href="#i-arrow"/></svg></button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="safety-strip page-wrap">
+      <div class="safety-badge"><svg class="icon"><use href="#i-warning"/></svg><span>SAFETY FIRST</span></div>
+      <div class="safety-copy"><p class="eyebrow">THE GOLDEN RULE</p><h2>Never trust a mystery bin.</h2><p>If you're unsure what something contains, pause before you sort it.</p></div>
+      <ul class="safety-list"><li><span>01</span>Use gloves for unknown or sharp objects.</li><li><span>02</span>Never puncture, mix or open mystery containers.</li><li><span>03</span>Keep batteries and chemicals away from regular bins.</li></ul>
+    </section>
+
+    <section id="guide" class="guide-section page-wrap">
+      <div class="guide-aside"><p class="eyebrow"><span class="eyebrow-mark"></span> A FIELD GUIDE FOR EVERYDAY SORTING</p><h2>When in doubt,<br><em>start here.</em></h2><p class="section-copy">A few quick cues for the things that don't always come with instructions.</p><div class="guide-reminder"><span class="reminder-icon"><svg class="icon"><use href="#i-spark"/></svg></span><span><strong>One reminder for every stream</strong><small>Empty, clean and dry your recyclables before they go in the bin.</small></span></div></div>
+      <div class="guide-list" aria-label="Quick sorting guide">
+        <details class="guide-item guide-item-bio"><summary><span class="guide-stream-icon"><svg class="icon"><use href="#i-leaf"/></svg></span><span class="guide-stream-name"><small>01 · RETURNS TO NATURE</small>Biodegradable</span><span class="guide-q">Quick cues</span><span class="guide-toggle" aria-hidden="true">+</span></summary><div class="guide-answer"><p>Food scraps, fruit and vegetable peels, coffee grounds and untreated garden trimmings can often go to a local compost or organics collection.</p><div class="guide-chips"><span>banana peel</span><span>coffee grounds</span><span>garden leaves</span></div><p class="guide-caution">Check whether your local collection accepts compostable packaging; many do not.</p></div></details>
+        <details class="guide-item guide-item-recycle"><summary><span class="guide-stream-icon"><svg class="icon"><use href="#i-recycle"/></svg></span><span class="guide-stream-name"><small>02 · GETS A SECOND LIFE</small>Recyclable</span><span class="guide-q">Quick cues</span><span class="guide-toggle" aria-hidden="true">+</span></summary><div class="guide-answer"><p>Clean paper, cardboard, glass jars and many rigid plastic containers may be recyclable when accepted by your local program.</p><div class="guide-chips"><span>plastic bottle</span><span>paper &amp; card</span><span>glass jar</span></div><p class="guide-caution">Empty, clean and dry items; keep food, liquids and tangled bags out of the stream.</p></div></details>
+        <details class="guide-item guide-item-hazard"><summary><span class="guide-stream-icon"><svg class="icon"><use href="#i-shield"/></svg></span><span class="guide-stream-name"><small>03 · HANDLE WITH CARE</small>Hazardous</span><span class="guide-q">Quick cues</span><span class="guide-toggle" aria-hidden="true">+</span></summary><div class="guide-answer"><p>Batteries, paints, solvents, pesticides and some cleaners need a designated household hazardous-waste or take-back service.</p><div class="guide-chips"><span>old battery</span><span>paint can</span><span>chemical cleaner</span></div><p class="guide-caution">Keep containers closed and labelled. Never pour chemicals down a drain or mix them together.</p></div></details>
+        <details class="guide-item guide-item-electronic"><summary><span class="guide-stream-icon"><svg class="icon"><use href="#i-cpu"/></svg></span><span class="guide-stream-name"><small>04 · RECOVER THE TECH</small>Electronic</span><span class="guide-q">Quick cues</span><span class="guide-toggle" aria-hidden="true">+</span></summary><div class="guide-answer"><p>Phones, computers, cables and small appliances contain useful recoverable materials. Look for an e-waste drop-off or manufacturer take-back scheme.</p><div class="guide-chips"><span>smartphone</span><span>charger</span><span>small appliance</span></div><p class="guide-caution">Remove personal data where possible and do not put lithium batteries in household recycling.</p></div></details>
+      </div>
+    </section>
+
+    <section id="project" class="project-section">
+      <div class="project-inner page-wrap">
+        <div class="project-stamp"><span>EC</span><span class="stamp-rule"></span><small>PROJECT<br>NOTEBOOK</small></div>
+        <div class="project-heading"><p class="eyebrow"><span class="eyebrow-mark"></span> OUR PROJECT</p><h2>Small habits,<br><em>big chemical changes.</em></h2></div>
+        <div class="project-description"><p class="project-objective"><strong>OBJECTIVE</strong> Make the right bin feel obvious.</p><p>Waste sorting can feel like a test you didn't study for. EcoChem brings a little chemistry to the moment you need it, so the right next step feels more obvious.</p><a href="#assistant" class="text-link">Back to the assistant <svg class="icon"><use href="#i-arrow"/></svg></a></div>
+        <div class="project-rule"></div>
+        <div class="project-fact"><span class="fact-number">04</span><span class="fact-label">WASTE STREAMS<br>MADE CLEARER</span></div>
+        <div class="project-method"><span class="method-label">OUR METHOD</span><span class="method-words">Search.<br>Understand.<br>Act.</span></div>
+        <div class="project-fact project-fact-planet"><span class="fact-number">01</span><span class="fact-label">PLANET<br>TO PROTECT</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main page-wrap"><a class="brand footer-brand" href="#top"><img src="./ecochem-logo.svg" width="42" height="42" alt=""><span class="brand-word">Eco<span>Chem</span><small>SMART SORTING ASSISTANT</small></span></a><p class="footer-thought">A little science for a lighter footprint.</p><div class="footer-links"><a href="#assistant">Assistant</a><a href="#scan">Scan object</a><a href="#guide">Sorting guide</a><a href="#project">Our project</a></div><a href="#top" class="back-top" aria-label="Back to top">↑</a></div>
+    <div class="footer-bottom page-wrap"><span>© <span id="year"></span> EcoChem prototype</span><span>Local rules differ. When in doubt, check your community's guidance.</span><span>MADE FOR A CLEANER NEXT CHAPTER <i></i></span></div>
+  </footer>
+</body>
+</html>
